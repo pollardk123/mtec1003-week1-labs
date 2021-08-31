@@ -14,29 +14,57 @@ Follow the instructions line-by-line.
 $ ls<ENTER>
 
 Copy and paste the output of ls below.
+
+
 ----------
-Applications
-Creative Cloud Files
-Desktop
-Documents
-Downloads
-Evening.Walk.latLong.v01.png
-Evening_Walk_exp_v02.hr.txt
-Library
-Movies
-Music
-OM
-Pictures
-Public
-finitevolume.png
-github
-iCloud Drive (Archive)
-installMacOpenFOAM
-javasharedresources
-lgBin
-louis.goldford@columbia.edu Creative Cloud Files
-startMacOpenFOAM
-venv
+'3D Objects'/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.0.regtrans-ms
+ NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.1.regtrans-ms
+ NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.2.regtrans-ms
+ NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.blf
+ NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TM.blf
+ NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.0.regtrans-ms
+ NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.1.regtrans-ms
+ NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.2.regtrans-ms
+ NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.blf
+ NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TM.blf
+ NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ get-pip.py*
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+
 
 
 
@@ -48,9 +76,11 @@ venv
 $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
+
+
 ----------
-drwx------@  5 louisgoldford2020  staff    160 Jun 12  2020 Applications
-drwx------@  4 louisgoldford2020  staff    128 Jan 11 10:49 Creative Cloud Files
+'Custom Office Templates'/  'My Videos'@   hp.applications.package.appdata/
+'My Music'@                  Zoom/         hp.system.package.metadata/
 
 
 
@@ -62,9 +92,10 @@ drwx------@  4 louisgoldford2020  staff    128 Jan 11 10:49 Creative Cloud Files
 $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
+
 ----------
-.			Adobe			IanniX			OM			Zwift
-..			CU			Ircam			Pd			iZotope
+./                         'My Pictures'@   hp.applications.package.appdata/
+ ../                        'My Videos'@     hp.system.package.metadata/
 
 
 
@@ -76,9 +107,10 @@ Copy and paste the first *two lines* of output below.
 $ ls doesnotexist
 
 Copy and paste the output below.
-----------
-ls: doesnotexist: No such file or directory
 
+
+----------
+ls: cannot access 'doesnotexist': No such file or directory
 
 
 
@@ -86,7 +118,7 @@ ls: doesnotexist: No such file or directory
 ==========
 5.  What key do I press to go to the previous command?
 ----------
-the UP arrow on my keyboard 
+The UP key 
 
 
 
@@ -96,16 +128,15 @@ the UP arrow on my keyboard
 6.  Name two flags/options that we used in this exercise.
 ----------
 
--l (list the LONG form of all the files)
--a (list ALL files, including the hidden ones!)
-
+-a
+-l
 
 
 
 ==========
 7.  What was the main command that we used throughout this exercise?
 ----------
-ls (list all them files!! yeehaw!)
+ls 
 
 
 
@@ -114,7 +145,6 @@ ls (list all them files!! yeehaw!)
 ==========
 8.  What's one an argument that we've so far passed to a command?
 ----------
-doesnotexist
 Documents
 
 
@@ -128,7 +158,7 @@ $ foo<ENTER>
 
 Copy and paste the output below.
 ----------
--bash: foo: command not found
+bash: foo: command not found
 
 
 
@@ -141,7 +171,8 @@ Copy and paste the output below.
 
 Copy and paste the output below.
 ----------
--bash: foo: command not found
+bash: syntax error near unexpected token `newline'
+
 
 
 
@@ -156,10 +187,8 @@ Identify the command, flag, argument, and prompt:
 ----------
 command: ls
 option/flag: -a
-argument: Desktop
-prompt: $ (The prompt is the symbol that tells you the computer is not currently running a command and is "ready" for your input.)
-
-(Sometimes you may see a % symbol instead of $.)
+argument:Desktop
+prompt: $
 
 
 
@@ -175,8 +204,8 @@ Follow the instructions line-by-line.
 ==========
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
+mkdir 
 
-mkdir
 
 
 
@@ -184,8 +213,7 @@ mkdir
 ==========
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
-
-cd 
+cd mtec 1003
 
 
 
@@ -201,7 +229,8 @@ If it doesn't ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-/Users/louisgoldford2020/mtec1003
+/c/Users/rober/mtec1003
+
 
 
 
@@ -215,7 +244,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals
+animals/
+
 
 
 
@@ -243,10 +273,11 @@ $ ls
 
 Copy and paste the output below.
 ----------
-animals	foo	food
+animals/  foo/
 
 
-(-p flag is RECURSIVE — meaning, recursively NEST one folder inside another...)
+
+
 
 
 ==========
@@ -257,7 +288,8 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-/Users/louisgoldford2020/mtec1003/foo/bar/baz/qux
+/c/Users/rober/mtec1003/foo/bar/baz/quz
+
 
 
 
@@ -271,6 +303,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+/c/Users/rober/mtec1003/foo/bar
 
 
 
@@ -285,6 +318,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+/c/Users/rober/mtec1003/foo/bar/baz/quz
 
 
 
@@ -299,6 +333,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+/c/Users/rober/mtec1003
 
 
 
