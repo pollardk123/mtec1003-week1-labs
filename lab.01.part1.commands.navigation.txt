@@ -349,6 +349,10 @@ $ ls -l
 
 Copy and paste the first 3 lines from the output into the space below.
 ----------
+total 0
+drwxr-xr-x 1 rober 197609 0 Aug 31 02:27 foo/
+
+
 
 
 
@@ -363,6 +367,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+/c/Users/rober
 
 
 
@@ -377,6 +382,8 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+/c/Users/rober
+
 
 
 
@@ -391,6 +398,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+/c/Users/rober
 
 
 
@@ -405,6 +413,8 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+/c/Users/rober/mtec1003
+
 
 
 
@@ -418,6 +428,7 @@ $ hostname
 
 Copy and paste the output into the space below.
 ----------
+LAPTOP-P05RMFJL
 
 
 
@@ -427,6 +438,8 @@ Copy and paste the output into the space below.
 ==========
 28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
+pwd mtec1003
+/c/Users/rober/mtec1003
 
 
 
@@ -458,6 +471,7 @@ lemon
 
 Write the one command you used below:
 ----------
+mkdir -p 
 
 
 
@@ -469,7 +483,7 @@ Write the one command you used below:
 
 Write the command you used to create the directory below:
 ----------
-
+mkdir
 
 
 
@@ -480,7 +494,19 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
+drwxr-xr-x 1 rober 197609 0 Aug 31 15:05 aardvark/
+drwxr-xr-x 1 rober 197609 0 Aug 31 19:45 bar/
+drwxr-xr-x 1 rober 197609 0 Aug 31 15:03 dir1/
+drwxr-xr-x 1 rober 197609 0 Aug 31 15:03 dir2/
+drwxr-xr-x 1 rober 197609 0 Aug 31 15:03 dir3/
+drwxr-xr-x 1 rober 197609 0 Aug 31 15:03 dir4/
+drwxr-xr-x 1 rober 197609 0 Aug 31 02:27 foo/
+drwxr-xr-x 1 rober 197609 0 Aug 31 15:03 lemon/
+drwxr-xr-x 1 rober 197609 0 Aug 31 19:31 orange/
+drwxr-xr-x 1 rober 197609 0 Aug 31 19:30 pineapple/
+drwxr-xr-x 1 rober 197609 0 Aug 31 19:31 strawberry/
 
+Modified date of aardvark directory : August 31st 3:05pm 
 
 
 
@@ -495,8 +521,8 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
-
+mkdir
+mkdir -p
 
 
 
@@ -506,7 +532,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+rmdir
 
 
 
@@ -517,7 +543,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+pushd
 
 
 
@@ -526,7 +552,7 @@ What command did you use?
 ==========
 36. What command is used to delete empty directories?
 ----------
-
+rmdir
 
 
 
@@ -535,7 +561,7 @@ What command did you use?
 ==========
 37. What command is used to print out your current working directory?
 ----------
-
+pwd
 
 
 
@@ -544,7 +570,7 @@ What command did you use?
 ==========
 38. What flag do I pass to ls to print out all files?
 ----------
-
+ls -al
 
 
 
@@ -553,7 +579,7 @@ What command did you use?
 ==========
 39. What's the shortcut for home directory?
 ----------
-
+~ tilde
 
 
 
@@ -562,7 +588,7 @@ What command did you use?
 ==========
 40. What's a pathname?
 ----------
-
+Pathname is the special location in the file system
 
 
 
@@ -571,7 +597,7 @@ What command did you use?
 ==========
 41. What is a directory?
 ----------
-
+Directory is used to ogranize files, it shows you other files and other directories
 
 
 
@@ -580,3 +606,4 @@ What command did you use?
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+C:\Users\rober\Downloads
