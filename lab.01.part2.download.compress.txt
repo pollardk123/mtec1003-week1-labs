@@ -14,46 +14,47 @@ Feel free to use your workstation to test your answers to the questions that don
 ==========
 1. Write the command that you would use to change to the root directory.
 ----------
+cd/
 
 
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
-
+cd ~
 
 
 ==========
 3. What's the absolute path to your Desktop directory?
 ----------
-
+/c/Users/rober
 
 
 ==========
 4. If you're in your home directory, how would you create a new directory on your desktop
 called stuff without changing your directory?  Write your command below.
-----------
-
+--------
+popd
 
 
 
 ==========
 5. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
-
+cd/c/Users/rober
 
 
 ==========
 6. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/professor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
-
+popd
 
 
 ==========
 7. How would you show all of the files (including hidden ones) with detailed (long) information
 for all files on your Desktop — if you're currently in your home directory?  Write your command below.
 ----------
-
+pwd ls-l
 
 
 ==========
@@ -74,6 +75,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
+hello there
 
 
 
@@ -85,6 +87,7 @@ $ echo whoa
 
 Copy and paste the output below.
 ----------
+whoa
 
 
 
@@ -95,7 +98,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+nothing happened
 
 
 ==========
@@ -103,7 +106,7 @@ Copy and paste the output below.
 
 Type [CTRL + C] to get your prompt back.
 ----------
-
+done.
 
 
 ==========
@@ -113,6 +116,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
+good mornin'
 
 
 
@@ -124,6 +128,8 @@ $ echo *
 
 What happens?
 ----------
+3D Objects AppData Application Data BullseyeCoverageError.txt Contacts Cookies Creative Cloud Files Desktop Documents Downloads Favorites Links Local Settings MicrosoftEdgeBackups Music My Documents NTUSER.DAT NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.0.regtrans-ms NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.1.regtrans-ms NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.2.regtrans-ms NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.blf NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TM.blf NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TMContainer00000000000000000002.regtrans-ms NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.0.regtrans-ms NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.1.regtrans-ms NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.2.regtrans-ms NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.blf NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TM.blf NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TMContainer00000000000000000002.regtrans-ms NetHood OneDrive Pictures PrintHood Recent Saved Games Searches SendTo Start Menu Templates Videos aardvark get-pip.py mtec1003 ntuser.dat.LOG1 ntuser.dat.LOG2 ntuser.ini
+
 
 
 
@@ -133,7 +139,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -148,7 +154,9 @@ $ curl -o mygoogle.html www.google.com
 
 Now copy and paste the output below.
 ----------
-
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13014    0 13014    0     0   124k      0 --:--:-- --:--:-- --:--:--  127k
 
 
 
@@ -160,6 +168,9 @@ Now copy and paste the output below.
 
 Write the command you used to determine your directory. Also, copy and paste the output below.
 ----------
+pwd 
+result : /c/Users/rober
+
 
 
 
@@ -171,7 +182,7 @@ Write the command you used to determine your directory. Also, copy and paste the
 Write the command that you used to change to your home directory.
 If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd
 
 
 ==========
@@ -188,6 +199,12 @@ Then, use ls to verify that it downloaded.
 Write down the command(s) that you used to download the file below.
 Finally, write the output of the command below.
 ----------
+curl -o 
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  9115  100  9115    0     0  20754      0 --:--:-- --:--:-- --:--:-- 20858
+
 
 
 
@@ -204,6 +221,61 @@ List the contents of your home directory to prove that the directory was created
 
 Copy and paste the output below.
 ----------
+/c/Users/rober:
+total 20562
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020 '3D Objects'/
+drwxr-xr-x 1 rober 197609       0 Oct 20  2020  AppData/
+lrwxrwxrwx 1 rober 197609      30 Oct 20  2020 'Application Data' -> /c/Users/rober/AppData/Roaming/
+-rw-r--r-- 1 rober 197609     151 Aug 22 16:25  BullseyeCoverageError.txt
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Contacts/
+lrwxrwxrwx 1 rober 197609      58 Oct 20  2020  Cookies -> /c/Users/rober/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 rober 197609       0 Sep  4 01:08 'Creative Cloud Files'/
+drwxr-xr-x 1 rober 197609       0 Aug 21 03:07  Desktop/
+drwxr-xr-x 1 rober 197609       0 Aug 25 17:58  Documents/
+drwxr-xr-x 1 rober 197609       0 Sep  2 21:05  Downloads/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Favorites/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Links/
+lrwxrwxrwx 1 rober 197609      28 Oct 20  2020 'Local Settings' -> /c/Users/rober/AppData/Local/
+-rw-r--r-- 1 rober 197609    9115 Sep  5 12:43  MTEC1003-my-flashcards.zip
+drwxr-xr-x 1 rober 197609       0 May 13  2018  MicrosoftEdgeBackups/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Music/
+lrwxrwxrwx 1 rober 197609      24 Oct 20  2020 'My Documents' -> /c/Users/rober/Documents/
+-rw-r--r-- 1 rober 197609 7864320 Aug 25 01:35  NTUSER.DAT
+-rw-r--r-- 1 rober 197609 1048576 Aug 26 23:38  NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.0.regtrans-ms
+-rw-r--r-- 1 rober 197609 1048576 Aug 25 19:13  NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.1.regtrans-ms
+-rw-r--r-- 1 rober 197609 1048576 Aug 25 19:13  NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.2.regtrans-ms
+-rw-r--r-- 1 rober 197609   65536 Aug 26 23:40  NTUSER.DAT{05b7015d-b714-11eb-99a9-1860241310ca}.TxR.blf
+-rw-r--r-- 1 rober 197609   65536 May 17 09:34  NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TM.blf
+-rw-r--r-- 1 rober 197609  524288 Aug 26 22:37  NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 rober 197609  524288 May 17 09:34  NTUSER.DAT{05b7015e-b714-11eb-99a9-1860241310ca}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 rober 197609 1048576 May 13 22:53  NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.0.regtrans-ms
+-rw-r--r-- 1 rober 197609 1048576 May 13 22:53  NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.1.regtrans-ms
+-rw-r--r-- 1 rober 197609 1048576 May 13 22:53  NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.2.regtrans-ms
+-rw-r--r-- 1 rober 197609   65536 May 13 22:53  NTUSER.DAT{306e00cf-1358-11eb-9993-b2b083c68152}.TxR.blf
+-rw-r--r-- 1 rober 197609   65536 Oct 20  2020  NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TM.blf
+-rw-r--r-- 1 rober 197609  524288 Oct 20  2020  NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 rober 197609  524288 Oct 20  2020  NTUSER.DAT{306e00d0-1358-11eb-9993-b2b083c68152}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 rober 197609      66 Oct 20  2020  NetHood -> '/c/Users/rober/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 rober 197609       0 Jul 30 01:17  OneDrive/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Pictures/
+lrwxrwxrwx 1 rober 197609      66 Oct 20  2020  PrintHood -> '/c/Users/rober/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 rober 197609      55 Oct 20  2020  Recent -> /c/Users/rober/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020 'Saved Games'/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Searches/
+lrwxrwxrwx 1 rober 197609      55 Oct 20  2020  SendTo -> /c/Users/rober/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 rober 197609      59 Oct 20  2020 'Start Menu' -> '/c/Users/rober/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 rober 197609      58 Oct 20  2020  Templates -> /c/Users/rober/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 rober 197609       0 Oct 21  2020  Videos/
+drwxr-xr-x 1 rober 197609       0 Aug 31 20:12  aardvark/
+-rwxr-xr-x 1 rober 197609 1957374 Aug 22 03:20  get-pip.py*
+drwxr-xr-x 1 rober 197609       0 Aug 31 19:49  mtec1003/
+-rw-r--r-- 1 rober 197609   13014 Sep  4 02:04  mygoogle.html
+-rw-r--r-- 1 rober 197609 1980416 Oct 20  2020  ntuser.dat.LOG1
+-rw-r--r-- 1 rober 197609  524288 Oct 20  2020  ntuser.dat.LOG2
+-rw-r--r-- 1 rober 197609      20 Oct 21  2020  ntuser.ini
+drwxr-xr-x 1 rober 197609       0 Sep  4 02:37  stuff/
+
+stuff:
 
 
 
@@ -219,6 +291,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
+hello.txt
 
 
 
@@ -232,6 +305,8 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
+stuff/
+stuff/hello.txt
 
 
 
@@ -240,10 +315,12 @@ Copy and paste the output below.
 15. Go up one directory back into your home directory.
 Run the following commands exactly to create a compressed archive of the stuff folder.
 
-$ tar -cvf stuff.tar stuff
+
 
 Copy and paste the output below.
 ----------
+stuff/
+stuff/hello.txt
 
 
 
@@ -258,6 +335,7 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.
 Copy and paste the output of your this below.
 ----------
+-rw-r--r-- 1 rober 197609 168 Sep  5 13:39 stuff.tar.gz
 
 
 
@@ -265,8 +343,10 @@ Copy and paste the output of your this below.
 
 ==========
 17. Now, let's uncompress the same file.
+$ tar -cvf stuff.tar stuff
 
-$ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+stuff/
+stuff/hello.txt
